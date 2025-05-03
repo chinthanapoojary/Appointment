@@ -299,7 +299,8 @@
 
 import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { auth, provider, signInWithPopup, signOut, db } from "../firebase";
+import { signInWithPopup } from '../firebase';  // Correct path to your firebase.js
+import { auth, provider, signOut, db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 import "./AppointmentForm1.css";
